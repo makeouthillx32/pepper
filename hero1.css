@@ -1,22 +1,10 @@
-/* Hero Section Styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-}
-
-.hero-section {
+.hero-section#hero1 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 50vh; /* Use half the viewport height */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent overflow */
-    position: relative;
+    width: 100%;
+    padding: 0px; /* Add padding to avoid content being cut off */
 }
 
 .date-time {
