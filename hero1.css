@@ -1,10 +1,22 @@
-.hero-section#hero1 .content {
+/* Hero Section Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 0px; /* Add padding to avoid content being cut off */
+    text-align: center;
+    height: 50vh; /* Use half the viewport height */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .date-time {
@@ -85,5 +97,21 @@
     .social-icons img {
         width: 50px; /* Adjust the size for mobile */
         height: 50px; /* Adjust the size for mobile */
+    }
+}
+#hero1 {
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    #hero1 {
+        height: 500px; /* Mobile height */
+    }
+}
+
+@media (min-width: 769px) {
+    #hero1 {
+        height: 600px; /* Desktop height */
     }
 }
