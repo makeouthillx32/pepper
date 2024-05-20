@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     height: 40vh;
     margin-bottom: 0;
 }
@@ -28,7 +28,7 @@ model-viewer {
     transition: transform 0.5s ease, opacity 0.5s ease;
     will-change: transform, opacity; /* Hint to browsers for smoother animations */
     transform-origin: center; /* Ensures the 3D model rotates around its center */
-    filter: drop-shadow(0 10px 10px rgba(255, 255, 255, 0.5)); /* Adds white shadow to the 3D model */
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5)); /* Adds white shadow to the 3D model */
 }
 
 /* Adjust position of hero2 for smaller screens */
@@ -70,7 +70,7 @@ model-viewer {
 
 @media (max-width: 400px) {
     #hero2 {
-        height: 15vh;
+        height: 30vh;
     }
     .model-viewer-container {
         transform: scale(1.5); /* Scale up to 150% for smallest screens */
